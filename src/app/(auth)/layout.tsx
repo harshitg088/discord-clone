@@ -1,11 +1,11 @@
 export default function AuthLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<div className=" bg-slate-400h-full flex items-center justify-center">
-			{children}
-		</div>
-	);
+  return (
+    <div className=" bg-slate-400h-full flex items-center justify-center">
+      {children}
+    </div>
+  );
 }
