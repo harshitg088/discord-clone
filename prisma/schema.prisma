@@ -34,7 +34,6 @@ model Server {
   name String
   imageUrl String @db.Text
   inviteCode String @db.Text
-  email String @unique
   members Member[]
   channels Channel[]
   profileId String
