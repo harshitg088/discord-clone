@@ -1,5 +1,6 @@
 'use client';
 
+import { Skeleton } from '@/components/ui/skeleton';
 import { UploadDropzone } from '@/lib/uploadthing';
 import '@uploadthing/react/styles.css';
 import { X } from 'lucide-react';
@@ -17,6 +18,7 @@ export const FileUpload = ({ onChange, value, endpoint }: FileUploadProps) => {
   if (value && fileType !== 'pdf') {
     return (
       <div className="relative h-20 w-20">
+        <Skeleton className="h-20 w-20 rounded-full" />
         <Image fill src={value} alt="Upload" className="rounded-full" />
         <button
           onClick={() => onChange('')}
