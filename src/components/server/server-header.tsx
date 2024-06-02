@@ -57,7 +57,10 @@ const ServerHeader = ({ server, role }: ServerHeaderProps) => {
           </DropdownMenuItem>
         )}
         {isAdmin && (
-          <DropdownMenuItem className="cursor-pointer px-3 py-2 text-sm">
+          <DropdownMenuItem
+            onClick={() => onOpen('members', { server })}
+            className="gap cursor-pointer px-3 py-2 text-sm"
+          >
             Manage Members
             <User className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
