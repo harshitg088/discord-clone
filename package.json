@@ -2,6 +2,19 @@
   "name": "discord-clone",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "discord",
+    "clone",
+    "nextjs",
+    "tailwindcss",
+    "prisma",
+    "react",
+    "typescript"
+  ],
+  "author": {
+    "name": "Harshit Gupta",
+    "email": "harshitg088@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
