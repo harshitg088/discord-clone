@@ -6,7 +6,7 @@ import { currentProfile } from '@/lib/current-profile';
 import { db } from '@/lib/db';
 import { UserButton } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
-import NavigationItem from './navigaton-item';
+import NavigationItem from './navigation-item';
 
 const NavigationSidebar = async () => {
   const profile = await currentProfile();
