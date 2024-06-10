@@ -8,7 +8,6 @@ interface ChatHeaderProps {
   imageUrl?: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ChatHeader = ({ serverId, name, type, imageUrl }: ChatHeaderProps) => {
   return (
     <div className="text-md flex h-12 items-center border-b-2 border-neutral-200 px-3 font-semibold dark:border-neutral-800">
