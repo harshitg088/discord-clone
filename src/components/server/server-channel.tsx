@@ -18,7 +18,6 @@ const iconMap = {
   [ChannelType.VIDEO]: Video,
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ServerChannel = ({ channel, server, role }: ServerChannelProps) => {
   const params = useParams();
   const router = useRouter();
