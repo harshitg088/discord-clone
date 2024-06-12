@@ -31,7 +31,7 @@ export const LeaveServerModal = () => {
     try {
       setIsLoading(true);
       const url = qs.stringifyUrl({
-        url: `/api/servers/${params.serverId}`,
+        url: `/api/servers/${params?.serverId}`,
       });
       await axios.delete(url);
       setIsLoading(false);

@@ -58,7 +58,7 @@ export const DeleteServerModal = () => {
   const onSubmit = async () => {
     try {
       const url = qs.stringifyUrl({
-        url: `/api/servers/${params.serverId}/delete`,
+        url: `/api/servers/${params?.serverId}/delete`,
       });
       await axios.delete(url);
       router.refresh();
