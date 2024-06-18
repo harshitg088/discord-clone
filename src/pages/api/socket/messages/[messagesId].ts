@@ -88,7 +88,6 @@ export default async function handler(
     }
 
     const isMessageOwner = message.memberId === member.id;
-    console.log('🚀 ~ isMessageOwner:', isMessageOwner);
     const isAdmin = member.role === MemberRole.ADMIN;
     const isModerator = member.role === MemberRole.MODERATOR;
     const canModify = isMessageOwner || isAdmin || isModerator;
